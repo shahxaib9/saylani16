@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>week 16</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <h1 id="ans">Output</h1>
+    <!-- char case check -->
+    <br>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Enter a character</span>
+      </div>
+      <input type="text" class="form-control" placeholder="enter a String" aria-label="string" aria-describedby="basic-addon1" id="charcase">
+     
+    </div>
+    <button type="button" class="btn btn-outline-primary" onclick="check()">Click me</button>
+    <br>
+
+    <!-- week day check -->
+    <br>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Enter a number of day </span>
+      </div>
+      <input type="number" class="form-control" placeholder="enter a number" aria-label="string" aria-describedby="basic-addon1" id="daynum">
+     
+    </div>
+    <button type="button" class="btn btn-outline-primary" onclick="week()">Click me</button>
+    <br>
+
+     <!-- Month day check -->
+     <br>
+     <div class="input-group mb-3">
+       <div class="input-group-prepend">
+         <span class="input-group-text" id="basic-addon1">Enter a number of Month </span>
+       </div>
+       <input type="number" class="form-control" placeholder="enter a number" aria-label="string" aria-describedby="basic-addon1" id="monthnum">
+      
+     </div>
+     <button type="button" class="btn btn-outline-primary" onclick="month()">Click me</button>
+     <br>
+
+     <!-- Triange check -->
+     <br>
+     <div class="input-group mb-3">
+       <div class="input-group-prepend">
+         <span class="input-group-text" id="basic-addon1">Enter Angles of triangle </span>
+       </div>
+       <input type="number" class="form-control" placeholder="enter a angle 1" aria-label="string" aria-describedby="basic-addon1" id="angle1">
+       <input type="number" class="form-control" placeholder="enter a angle 2" aria-label="string" aria-describedby="basic-addon1" id="angle2">
+       <input type="number" class="form-control" placeholder="enter a angle 3" aria-label="string" aria-describedby="basic-addon1" id="angle3">
+     </div>
+     <button type="button" class="btn btn-outline-primary" onclick="triangle()">Click me</button>
+     <br>
+
+     <!-- Triange type check -->
+     <br>
+     <div class="input-group mb-3">
+       <div class="input-group-prepend">
+         <span class="input-group-text" id="basic-addon1">Enter Angles of triangle </span>
+       </div>
+       <input type="number" class="form-control" placeholder="enter a angle 1" aria-label="string" aria-describedby="basic-addon1" id="angle01">
+       <input type="number" class="form-control" placeholder="enter a angle 2" aria-label="string" aria-describedby="basic-addon1" id="angle02">
+       <input type="number" class="form-control" placeholder="enter a angle 3" aria-label="string" aria-describedby="basic-addon1" id="angle03">
+     </div>
+     <button type="button" class="btn btn-outline-primary" onclick="triangleType()">Click me</button>
+     <br>
+
+     <!-- quardratic check -->
+     <br>
+     <div class="input-group mb-3">
+       <div class="input-group-prepend">
+         <span class="input-group-text" id="basic-addon1">Enter Equation </span>
+       </div>
+       <input type="number" class="form-control" placeholder="enter value of X2" aria-label="string" aria-describedby="basic-addon1" id="val1">
+       <input type="number" class="form-control" placeholder="enter value of x" aria-label="string" aria-describedby="basic-addon1" id="val2">
+       <input type="number" class="form-control" placeholder="enter value of constant" aria-label="string" aria-describedby="basic-addon1" id="val3">
+     </div>
+     <button type="button" class="btn btn-outline-primary" onclick="quadEq()">Click me</button>
+     <br>
+
+      <!-- profit/loss check -->
+      <br>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Enter investment datails</span>
+        </div>
+        <input type="number" class="form-control" placeholder="enter amount you invest" aria-label="string" aria-describedby="basic-addon1" id="investval1">
+        <input type="number" class="form-control" placeholder="enter amount your amount now " aria-label="string" aria-describedby="basic-addon1" id="investval2">
+      </div>
+      <button type="button" class="btn btn-outline-primary" onclick="profitLoss()">Click me</button>
+      <br>
+
+      <!-- occurance check -->
+      <br>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Check Occurence</span>
+        </div>
+        <input type="text" class="form-control" placeholder="enter text" aria-label="string" aria-describedby="basic-addon1" id="wordenter">
+        <input type="text" class="form-control" placeholder="enter character " aria-label="string" aria-describedby="basic-addon1" id="charenter">
+      </div>
+      <button type="button" class="btn btn-outline-primary" onclick=" occur()">Click me</button>
+      <br>
+
+       <!-- frequency check -->
+       <br>
+       <div class="input-group mb-3">
+         <div class="input-group-prepend">
+           <span class="input-group-text" id="basic-addon1">Check frequency</span>
+         </div>
+         <input type="text" class="form-control" placeholder="enter text" aria-label="string" aria-describedby="basic-addon1" id="freqinput">
+       </div>
+       <button type="button" class="btn btn-outline-primary" onclick=" frequency()">Click me</button>
+       <br>
+
+        <!-- remove first occurence check -->
+        <br>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">remove first occurence</span>
+          </div>
+          <input type="text" class="form-control" placeholder="enter text" aria-label="string" aria-describedby="basic-addon1" id="removefirst">
+        </div>
+        <button type="button" class="btn btn-outline-primary" onclick="removefirst()">Click me</button>
+        <br>
+
+        <!-- remove last occurence check -->
+        <br>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">remove last occurence</span>
+          </div>
+          <input type="text" class="form-control" placeholder="enter text" aria-label="string" aria-describedby="basic-addon1" id="removelast">
+        </div>
+        <button type="button" class="btn btn-outline-primary" onclick="removelast()">Click me</button>
+        <br>
+
+        <!-- remove all occurence check -->
+        <br>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">remove all occurence</span>
+          </div>
+          <input type="text" class="form-control" placeholder="enter text" aria-label="string" aria-describedby="basic-addon1" id="removeall">
+          <input type="text" class="form-control" placeholder="enter text" aria-label="string" aria-describedby="basic-addon1" id="chartoremove">
+        </div>
+        <button type="button" class="btn btn-outline-primary" onclick="removeall()">Click me</button>
+        <br>
+
+         <!-- sum of all natural check -->
+         <br>
+         <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Sum of natural</span>
+          </div>
+          <input type="number" class="form-control" placeholder="enter number" aria-label="string" aria-describedby="basic-addon1" id="natinput">
+          </div>
+         <button type="button" class="btn btn-outline-primary" onclick="natural()">Click me</button>
+         <br>
+
+         <!-- sum of all even check -->
+         <br>
+         <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Sum of even</span>
+          </div>
+          <input type="number" class="form-control" placeholder="enter number" aria-label="string" aria-describedby="basic-addon1" id="eveninput">
+          </div>
+         <button type="button" class="btn btn-outline-primary" onclick="even()">Click me</button>
+         <br>
+
+         <!-- sum of all odd check -->
+         <br>
+         <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Sum of odd</span>
+          </div>
+          <input type="number" class="form-control" placeholder="enter number" aria-label="string" aria-describedby="basic-addon1" id="oddinput">
+          </div>
+         <button type="button" class="btn btn-outline-primary" onclick="odd()">Click me</button>
+         <br>
+
+         <!-- table of any number -->
+         <br>
+         <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Table of any number</span>
+          </div>
+          <input type="number" class="form-control" placeholder="enter number" aria-label="string" aria-describedby="basic-addon1" id="tableinput">
+          </div>
+         <button type="button" class="btn btn-outline-primary" onclick="table()">Click me</button>
+         <br>
+
+         <!-- how many number -->
+         <br>
+         <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">how many number</span>
+          </div>
+          <input type="number" class="form-control" placeholder="enter number" aria-label="string" aria-describedby="basic-addon1" id="countnum">
+          </div>
+         <button type="button" class="btn btn-outline-primary" onclick="countnum()">Click me</button>
+         <br>
+
+         <!-- first and last digits -->
+         <br>
+         <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">first and last are</span>
+          </div>
+          <input type="number" class="form-control" placeholder="enter number" aria-label="string" aria-describedby="basic-addon1" id="displaynum">
+          </div>
+         <button type="button" class="btn btn-outline-primary" onclick="displaynum()">Click me</button>
+         <br>
+         <!-- sum of first and last digits -->
+         <br>
+         <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">sum offirst and last are</span>
+          </div>
+          <input type="number" class="form-control" placeholder="enter number" aria-label="string" aria-describedby="basic-addon1" id="sumnum">
+          </div>
+         <button type="button" class="btn btn-outline-primary" onclick="sumnum()">Click me</button>
+         <br>
+         <!-- multiply of first and last digits -->
+         <br>
+         <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">multiply of first and last are</span>
+          </div>
+          <input type="number" class="form-control" placeholder="enter number" aria-label="string" aria-describedby="basic-addon1" id="multiplynum">
+          </div>
+         <button type="button" class="btn btn-outline-primary" onclick="multiplynum()">Click me</button>
+         <br>
+    <!-- Optional JavaScript -->
+    <script src="./script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
